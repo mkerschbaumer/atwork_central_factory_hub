@@ -146,7 +146,7 @@ PluginManager::init_pinfo_cache()
 
   DIR *plugin_dir;
   struct dirent* dirp;
-  const char *file_ext = "."SOEXT;
+  const char *file_ext = "." SOEXT;
 
   if ( NULL == (plugin_dir = opendir(PLUGINDIR)) ) {
     throw Exception(errno, "Plugin directory %s could not be opened", PLUGINDIR);
